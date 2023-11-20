@@ -45,7 +45,7 @@ class StartPage(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         
-        tk.Message(self, text="Please Login: ", font=('Courier', 16), justify="left", aspect=800).pack()
+        tk.Message(self, text="PleaseLogin: ", font=('Courier', 16), justify="left", aspect=800).pack()
 
         dialog_frame = tk.Frame(self)
         dialog_frame.pack(padx=300, pady=15, anchor='w')
