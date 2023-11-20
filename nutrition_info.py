@@ -11,7 +11,7 @@ class TrishApp(tk.Tk):
     def __init__(self, master=None, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
         self.title_font = tkfont.Font(font=("Courier", 30), weight="bold")
-        self.tk_setPalette(background="black")
+        self.tk_setPalette(background="green")
         
 
         container = tk.Frame(self)
