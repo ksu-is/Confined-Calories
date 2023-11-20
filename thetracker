@@ -1,0 +1,101 @@
+'''
+This is where users will track their progress or how well they met their daily goals after logging calories input.
+'''
+#import libraries first
+import statistics as s
+#not quite sure what too do about this part.
+
+#add constants next
+admins = {'jasmine':'abc123','david':'ABC123'}
+#this definitely needs to be changed. This is formatting I don't understand to I was not sure about diving in and changing it.
+
+students = {'Alex':[87,88,98],
+            'Sally':[88,67,93],
+            'Nboke':[90,88,78]}
+#I know that we should change it so that the user can enter their name and that name is used. I was hoping this would not be too complicated.
+
+food = {'chicken':[90, 0, 60, 100, 0, 22]} #obviously we have to change this.
+#now define functions
+def view_nutrition():
+    print("Hi")
+    for foods in food:
+        calories = foods[food,0]
+    print(str(calories))
+    
+def calorie_goal():
+    name_user = input('User name: ')
+    goals_met_today = input('Score: ')
+
+    if name_user in users:
+        print('Adding score for'+ name_user)
+        users[name_user].append(float(goals_met_today)) #float will have a .0
+        print(str(name_user) + ' Did this well meeting their goal today:')
+        print(users[name_user])
+    else:
+        print('User not found. Please check your spelling or go back and add if new.')
+
+def remove_users():
+    name_remove = input('Who do you want to remove? ')
+    if name_remove in users:
+        print('Removing '+ name_remove)
+        del users[name_remove]
+        print(users)
+    else:
+        print('User not found.')
+
+def average_users():
+    for user in users:
+        scores = users[user]
+        average = s.mean(scores)
+        print(user,' Your Scores is ',average)
+
+def main():
+    print("User: " + login)
+    print("""
+    Welcome to the Calorie Count #wasn't sure what to do about this either.
+
+    [1] - Enter Scores
+    [2] - Remove User
+    [3] - User Scores
+    [4] - Exit
+    [5] - View Nutrition Info
+    """)
+
+    action = input('What would you like to do? (Enter a number) ')
+
+    if action == '1':
+        #print('1 selected')
+        enterGrades()
+    elif action == '2':
+        #print('2 selected')
+        removeStudent()
+    elif action == '3':
+        #print('3 selected')
+        averageStudents()
+    elif action == '4':
+        #print('4 selected')
+        exit()
+    elif action == '5':
+        viewnutrition()
+    else:
+        print('Valid option not selected.') #need to cause it to reprompt
+
+login = input('User: ')
+password = input('Password: ')
+
+if login in admins:
+    if admins[login] == password:
+        print('Welcome to Confined Calories,',login)
+        #now run the code
+        while True:
+            main()
+    else:
+        print('Invalid password.')
+else:
+  print('Invalid user.')
+
+    print('Invalid user.')
+
+#There's more pages included in the original but I wanted to discuss whether we should include them or not.
+#I have edited the powerpoint some more.
+#I actually like a lot of this, there's just some parts that need tweaking.
