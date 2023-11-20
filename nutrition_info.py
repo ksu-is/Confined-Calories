@@ -1,3 +1,5 @@
+#This will give the user all of the information they need regarding their meals. It give their macros, calorie count, etc. from each meals.
+
 import tkinter as tk
 from tkinter import font as tkfont
 from tkinter import *
@@ -231,7 +233,7 @@ class PageThree(tk.Frame):
         L9 = tk.Label(self, text = "Sugars (g)", font=controller.title_font).place(x=10,y=500)
         L10 = tk.Label(self, text = "Sodium (mg)", font=controller.title_font).place(x=10,y=550)
 
-        #Create variables for each list
+        #Create variables for each list. This is where macros, calories, sodium, etc, are displayed.
   
         comp = StringVar() #For 1st dd
         comp.set('----')
@@ -312,7 +314,7 @@ class PageThree(tk.Frame):
             sugar.set('')
             sodium.set('')
 
-        
+#The user can submit or erase any information they enter.      
         button_1 = tk.Button(self,text="Submit", command=post)
         button_1.place(x=400,y=650)
 
