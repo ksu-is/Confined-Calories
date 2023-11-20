@@ -15,20 +15,25 @@ This is where users will track their progress or how well they met their daily g
 '''
 #import libraries first
 import statistics as s
+#not quite sure what too do about this part.
 
 #add constants next
 admins = {'jasmine':'abc123','david':'ABC123'}
+#this definitely needs to be changed. This is formatting I don't understand to I was not sure about diving in and changing it.
 
 students = {'Alex':[87,88,98],
             'Sally':[88,67,93],
             'Nboke':[90,88,78]}
-food = {'chicken':[90, 0, 60, 100, 0, 22]}
+#I know that we should change it so that the user can enter their name and that name is used. I was hoping this would not be too complicated.
+
+food = {'chicken':[90, 0, 60, 100, 0, 22]} #obviously we have to change this.
 #now define functions
 def view_nutrition():
     print("Hi")
     for foods in food:
         calories = foods[food,0]
     print(str(calories))
+    
 def calorie_goal():
     name_user = input('User name: ')
     goals_met_today = input('Score: ')
@@ -59,7 +64,7 @@ def average_users():
 def main():
     print("User: " + login)
     print("""
-    Welcome to the Calorie Count
+    Welcome to the Calorie Count #wasn't sure what to do about this either.
 
     [1] - Enter Scores
     [2] - Remove User
@@ -102,3 +107,7 @@ else:
   print('Invalid user.')
 
     print('Invalid user.')
+
+#There's more pages included in the original but I wanted to discuss whether we should include them or not.
+#I have edited the powerpoint some more.
+#I actually like a lot of this, there's just some parts that need tweaking.
