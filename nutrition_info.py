@@ -53,7 +53,7 @@ class StartPage(tk.Frame):
         dialog_frame.pack(padx=300, pady=15, anchor='w')
 
         tk.Label(dialog_frame, text="Username:")
-        self.name = tk.Entry(self, background='black', width=24).pack()
+        self.name = tk.Entry(self, background='green', width=24).pack()
 
         button1 = tk.Button(self, text='Login', command=lambda: controller.show_frame("PageOne"))
         button1.pack()
@@ -69,7 +69,7 @@ class StartPage(tk.Frame):
         print("The user clicked 'Cancel'")
         print(self.name.get())
 
-    admins = {'jasmine':'abc123','david':'ABC123'}
+    admins = {'delaynie':'abc123','harrison':'ABC123'}
     #we need to do something about this.
 
 class PageOne(tk.Frame):
@@ -115,7 +115,7 @@ class PageTwo(tk.Frame):
             conn.commit()
             conn.close()
         def view():
-            conn = sq.connect("nutrition.db")
+            conn = sq.connect("nutrition.db") #Now we get into the details of their meals.
             c = conn.cursor()
             c.execute("SELECT * FROM Breakfast")
             rows = c.fetchall()
