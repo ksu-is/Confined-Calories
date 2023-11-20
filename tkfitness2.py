@@ -8,7 +8,7 @@ from tkinter import ttk
 class TrishApp(tk.Tk):
     def __init__(self, master=None, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
-        self.title_font = tkfont.Font(font=("Courier", 20), weight="bold")
+        self.title_font = tkfont.Font(font=("Courier", 30), weight="bold")
         self.tk_setPalette(background="black")
         
 
@@ -17,7 +17,7 @@ class TrishApp(tk.Tk):
         container.grid_rowconfigure(0, weight=1)
         container.grid_columnconfigure(0, weight=1)
 
-        self.title("Fitness Pizza in My Mouth")
+        self.title("Confined Calories")
         self.geometry("800x700+0+0")
         self.bind('<Escape>', StartPage.click_cancel)
 
@@ -76,7 +76,7 @@ class PageOne(tk.Frame):
         self.controller = controller
         self.sp = StartPage
 
-        label = tk.Label(self, text="Welcome to your Nutrition App!", font=controller.title_font)
+        label = tk.Label(self, text="Welcome to Confined Calories!", font=controller.title_font)
         label.pack(side="top", fill="x", pady=10)
         label2 = tk.Label(self, text="What would you like to do?" ,font=('Courier', 12))
         label2.pack()
