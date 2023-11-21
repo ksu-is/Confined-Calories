@@ -6,4 +6,4 @@ Roadmap
 - [x] Begin to look for existing repositorys that are similair to our project.
 - [x] Begin to run different repositorys and choose one that would like to use.
 - [x] Begin to work on code and continually update project
-- [ ] Periodically run code to ensure it is working
+- [x] Periodically run code to ensure it is working
