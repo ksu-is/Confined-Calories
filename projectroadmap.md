@@ -7,3 +7,6 @@ Roadmap
 - [x] Begin to run different repositorys and choose one that would like to use.
 - [x] Begin to work on code and continually update project
 - [x] Periodically run code to ensure it is working
+- [ ] Make a slide to submit
+- [ ] Finish the presentation
+- [ ] Schedule the presentation
